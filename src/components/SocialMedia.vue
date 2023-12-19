@@ -1,24 +1,20 @@
 <script setup lang="ts">
 
-import instagram_icon from "../assets/icons/instagram.png";
-import youtube_icon from "../assets/icons/youtube.png";
-import twitter_icon from "../assets/icons/twitter.png";
-
 const SOCIAL_MEDIA = [
     {
         site: "Instagram",
         link: "https://instagram.com/TheFilmEngine.Co",
-        icon: instagram_icon
+        icon: "/icons/instagram.png"
     },
     {
         site: "YouTube",
         link: "https://youtube.com/TheFilmEngineCo",
-        icon: youtube_icon
+        icon: "/icons/youtube.png"
     },
     {
         site: "Twitter",
         link: "https://twitter.com/TheFilmEngineCo",
-        icon: twitter_icon
+        icon: "/icons/twitter.png"
     },
 ]
 </script>
