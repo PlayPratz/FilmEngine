@@ -8,7 +8,7 @@ const SOCIAL_MEDIA = [
     },
     {
         site: "YouTube",
-        link: "https://youtube.com/TheFilmEngineCo",
+        link: "https://youtube.com/@TheFilmEngineCo",
         icon: "/icons/youtube.png"
     },
     {
