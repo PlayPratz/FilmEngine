@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SocialMedia from '@/components/SocialMedia.vue';
+
 </script>
 
 <template>
@@ -9,8 +11,10 @@
       ENGINE<br />
     </h1>
     <br /> <br /> <br />
-    <h5 class="bolder">
+    <h6 class="fw-light">
       COMING SOON
-    </h5>
+    </h6>
+    <br />
+    <SocialMedia />
   </div>
 </template>

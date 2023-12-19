@@ -22,6 +22,10 @@
   margin: auto;
 }
 
+.social-media-icon {
+  width: 24px;
+}
+
 body {
   display: flex;
   place-items: center;
