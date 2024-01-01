@@ -30,9 +30,9 @@ const SOCIAL_MEDIA: SocialMediaConnection[] = [
       <SocialMedia class="my-5" :connections="SOCIAL_MEDIA" />
     </div>
   </div>
-  <div class="elevated-button my-5 px-5 fit-content">
-    <RouterLink to="meet-us" class="text-decoration-none text-grey">
+  <RouterLink to="meet-us" class="text-decoration-none text-grey">
+    <div class="elevated-button my-5 px-5 fit-content">
       <h5 class="text-uppercase m-0">Meet the Team</h5>
-    </RouterLink>
-  </div>
+    </div>
+  </RouterLink>
 </template>

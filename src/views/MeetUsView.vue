@@ -94,9 +94,9 @@ const PEOPLE: TeamMember[] = [
         </div>
         <hr class="w-50 mx-auto my-5">
     </div>
-    <div class="elevated-button my-5 px-5 fit-content">
-        <RouterLink to="/" class="text-decoration-none text-grey">
+    <RouterLink to="/" class="text-decoration-none text-grey">
+        <div class="elevated-button my-5 px-5 fit-content">
             <h5 class="text-uppercase m-0">Home</h5>
-        </RouterLink>
-    </div>
+        </div>
+    </RouterLink>
 </template>
