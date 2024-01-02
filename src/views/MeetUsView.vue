@@ -50,7 +50,7 @@ const PEOPLE: TeamMember[] = [
     },
     {
         name: "Pratik Nerurkar",
-        description: "An engineer by degree and a film enthusiast at heart, I’ve grown up admiring both commercial as well as content-driven cinema. My interests lie in entertaining my audience while contributing positively to society.",
+        description: "An engineer by degree and a film enthusiast at heart, I’ve grown up admiring all genres of commercial cinema. I'm here to spread laughs and entertain my audience while contributing positively to society.",
         image: "76b25983-806a-45b7-8ea3-9039ddc6f2f0.jpg",
         connections: [
             {
