@@ -1,20 +1,14 @@
 <script setup lang="ts">
-import type { SocialMediaConnection } from '@/components/SocialMedia.vue';
-import SocialMedia from "@/components/SocialMedia.vue"
+import type { TeamMember } from '@/components/PersonBio.vue';
+import PersonBio from '@/components/PersonBio.vue';
 
-
-interface TeamMember {
-    name: string;
-    post?: string;
-    description: string;
-    image: string;
-    connections?: SocialMediaConnection[]
-}
-
-const PEOPLE: TeamMember[] = [
+const FOUNDERS: TeamMember[] = [
     {
         name: "Shree Warang",
-        post: "Founder & Director",
+        post: {
+            title: "Founder & Director",
+            category: "Founder"
+        },
         description: "Being a movie buff, I adore every step of the production process, from writing the screenplay to producing the sound design to editing. But acting is the aspect of filmmaking that I adore and love the most!",
         image: "8a6f203d-84b5-43ab-9206-657b3dc7696a.jpg",
         connections: [
@@ -26,7 +20,10 @@ const PEOPLE: TeamMember[] = [
     },
     {
         name: "Dhruv Tiwari",
-        post: "Founder & Director",
+        post: {
+            title: "Founder & Director",
+            category: "Founder"
+        },
         description: "Whether it's tapping my feet to some tunes or evoking laughter with my comic timing, I'm always up to the task. The important thing is that we never miss a beat.",
         image: "f83574f3-93ab-4313-9704-647768be8be8.jpg",
         connections: [
@@ -36,24 +33,12 @@ const PEOPLE: TeamMember[] = [
             }
         ]
     },
-    // {
-    //     name: "Rutuja Shelar",
-    //     description: "I'm a film enthusiast wanting to get into the process of making reel life as real as I can. I'm a true believer of the fact that doing what you love is the only recipe for SUCCESS!",
-    //     image: "4408a96f-48a7-4ea2-b8f0-f2bb96545d3e.jpg",
-    //     connections: [
-    //         {
-    //             site: "Instagram",
-    //             link: "https://instagram.com/rutujashelar"
-    //         },
-    //         {
-    //             site: "LinkedIn",
-    //             link: "https://linkedin.com/in/rutuja-shelar-3b46b027b"
-    //         },
-    //     ]
-    // },
     {
         name: "Pratik Nerurkar",
-        post: "Founder & Managing Director",
+        post: {
+            title: "Founder & Managing Director",
+            category: "Founder"
+        },
         description: "An engineer by degree and a film enthusiast at heart, I’ve grown up admiring all genres of commercial cinema. I'm here to spread laughs and entertain my audience while contributing positively to society.",
         image: "76b25983-806a-45b7-8ea3-9039ddc6f2f0.jpg",
         connections: [
@@ -72,19 +57,39 @@ const PEOPLE: TeamMember[] = [
         ]
     }
 ];
+
+const ADVISORS: TeamMember[] = [
+    {
+        name: "Rutuja Shelar",
+        post: {
+            title: "Friendly Advisor",
+            category: "Advisor",
+        },
+        description: "I'm a film enthusiast wanting to get into the process of making reel life as real as I can. I'm a true believer of the fact that doing what you love is the only recipe for SUCCESS!",
+        image: "4408a96f-48a7-4ea2-b8f0-f2bb96545d3e.jpg",
+        connections: [
+            {
+                site: "Instagram",
+                link: "https://instagram.com/rutujashelar"
+            },
+            {
+                site: "LinkedIn",
+                link: "https://linkedin.com/in/rutuja-shelar-3b46b027b"
+            },
+        ]
+    },
+]
 </script>
 
 <template>
-    <div v-for="person in PEOPLE" :key="person.name" class="my-4 w-100">
-        <div class="d-flex flex-column flex-md-row">
-            <img :src="`/people/${person.image}`" class="img-thumbnail team-member-image" />
-            <div class="py-2 ms-md-3">
-                <h5 class="team-member-name">{{ person.name }}</h5>
-                <span class="badge text-bg-success py-2 me-2">{{ person.post }}</span>
-                <SocialMedia v-if="person.connections" :connections="person.connections" class="my-2" />
-                <p>{{ person.description }}</p>
-            </div>
-        </div>
+    <h4 class="team-member-name px-4 py-2 mb-4 rounded badge-founder">Founders</h4>
+    <div v-for="person in FOUNDERS" :key="person.name">
+        <PersonBio :person="person" />
+        <hr class="my-4"/>
+    </div>
+    <h4 class="team-member-name px-4 py-2 mb-4 rounded badge-advisor">Advisors</h4>
+    <div v-for="person in ADVISORS" :key="person.name">
+        <PersonBio :person="person" />
     </div>
     <RouterLink to="/" class="text-decoration-none text-grey">
         <div class="elevated-button my-5 px-5 fit-content">

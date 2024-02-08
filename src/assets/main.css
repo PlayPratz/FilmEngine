@@ -23,6 +23,12 @@
 
 */
 
+:root{
+  --color-founder: #198754;
+  --color-advisor: firebrick;
+}
+
+
 #app {
   width: 100%;
   min-height: 100vh;
@@ -92,6 +98,14 @@
 .team-member-name {
   letter-spacing: .1rem;
   text-transform: uppercase;
+}
+
+.badge-founder {
+  background-color: var(--color-founder)
+}
+
+.badge-advisor {
+ background-color: var(--color-advisor);
 }
 
 .social-media-icon {
