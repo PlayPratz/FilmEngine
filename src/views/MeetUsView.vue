@@ -76,29 +76,15 @@ const PEOPLE: TeamMember[] = [
 
 <template>
     <div v-for="person in PEOPLE" :key="person.name" class="my-4 w-100">
-        <!-- Desktop -->
-        <div class="d-none d-md-flex">
-            <img :src="`/people/${person.image}`" class="img-thumbnail team-member-image mx-4" />
-            <div class="py-2">
+        <div class="d-flex flex-column flex-md-row">
+            <img :src="`/people/${person.image}`" class="img-thumbnail team-member-image" />
+            <div class="py-2 ms-md-3">
                 <h5 class="team-member-name">{{ person.name }}</h5>
                 <span class="badge text-bg-success py-2 me-2">{{ person.post }}</span>
                 <SocialMedia v-if="person.connections" :connections="person.connections" class="my-2" />
                 <p>{{ person.description }}</p>
             </div>
         </div>
-        <!-- Mobile -->
-        <div class="d-md-none">
-            <div class="d-flex mb-3">
-                <img :src="`/people/${person.image}`" class="img-thumbnail team-member-image" />
-                <div class="ms-3">
-                    <h5 class="team-member-name my-2">{{ person.name + '\n' }}</h5>
-                    <span class="badge text-bg-success py-2">{{ person.post }}</span>
-                    <SocialMedia v-if="person.connections" :connections="person.connections" class="my-2" />
-                </div>
-            </div>
-            <p>{{ person.description }}</p>
-        </div>
-        <hr class="w-50 mx-auto my-5">
     </div>
     <RouterLink to="/" class="text-decoration-none text-grey">
         <div class="elevated-button my-5 px-5 fit-content">
@@ -106,16 +92,3 @@ const PEOPLE: TeamMember[] = [
         </div>
     </RouterLink>
 </template>
-
-<!-- <div class="d-flex">
-            <img :src="`/people/${person.image}`" class="img-thumbnail team-member-image" />
-            <div class="py-2 ms-3">
-                <h5 class="team-member-name">{{ person.name }}</h5>
-                <div class="d-flex align-items-center mb-2">
-                    <span class="badge text-bg-success py-2 me-2">{{ person.post }}</span>
-                    <SocialMedia v-if="person.connections" :connections="person.connections" />
-                </div>
-            </div>
-        </div>
-        <p class="mt-2">{{ person.description }}</p>
-     -->
