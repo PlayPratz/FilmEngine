@@ -16,7 +16,7 @@ const props = defineProps<{connections: SocialMediaConnection[]}>();
 </script>
 
 <template>
-    <div class="d-flex bg-red">
+    <div class="d-flex">
         <div v-for="platform in props.connections" :key="platform.site" class="me-3">
             <a :href="platform.link" target="_blank"> 
                 <img :src="SITE_TO_ICON[platform.site]" class="social-media-icon" />

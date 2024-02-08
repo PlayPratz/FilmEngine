@@ -4,7 +4,7 @@ import SocialMedia, { type SocialMediaConnection } from '@/components/SocialMedi
 const SOCIAL_MEDIA: SocialMediaConnection[] = [
   {
     site: "Instagram",
-    link: "https://instagram.com/TheFilmEngine.Co",
+    link: "https://instagram.com/TheFilmEngine.co",
   },
   {
     site: "YouTube",
@@ -20,14 +20,17 @@ const SOCIAL_MEDIA: SocialMediaConnection[] = [
 
 <template>
   <div class="fit-content">
-    <img src="/logos/TFE-logo-only-transparent.png" class="img-fluid" style="height: 250px;" />
+    <img src="/logos/TFE-logo-only-transparent.png" class="img-fluid mx-auto d-block" style="height: 250px;" />
     <div class="fit-content my-4">
       <div>
-        <h2 class="pre-title"> The </h2>
-        <h2 class="pre-title"> Film </h2>
-        <h1 class="title"> Engine </h1>
+        <h2 class="pre-title">The</h2>
+        <h2>
+          <span class="title text-light">Film</span>
+          <span class="title">Engine</span>
+        </h2>
       </div>
-      <SocialMedia class="my-5" :connections="SOCIAL_MEDIA" />
+      <h5 class="sec-title">We're here to produce entertainment.</h5>
+      <SocialMedia class="my-5 mx-auto" :connections="SOCIAL_MEDIA" />
     </div>
   </div>
   <RouterLink to="meet-us" class="text-decoration-none text-grey">
