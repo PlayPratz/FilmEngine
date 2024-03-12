@@ -21,7 +21,7 @@ const SOCIAL_MEDIA: SocialMediaConnection[] = [
 <template>
   <div class="fit-content">
     <!-- <img src="/logos/TFE-logo-only-transparent.png" class="img-fluid mx-auto d-block" style="height: 250px;" /> -->
-    <img src="/logos/logo-engine-v1.png" class="img-fluid mx-auto d-block" style="max-height: 350px;" />
+    <img src="/logos/logo-engine-v1-min.png" class="img-fluid mx-auto d-block" style="max-height: 350px;" />
     <div class="fit-content">
       <div>
         <!-- <h2 class="pre-title">The</h2> -->
