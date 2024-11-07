@@ -11,7 +11,7 @@
 <template>
     <header class="sticky-top">
         <div class="d-flex m-4">
-            <RouterLink v-if="$route.name !== 'home'" to="/" class="text-decoration-none text-reset">
+            <RouterLink v-if="$route.name !== 'home'" to="/" class="text-decoration-none text-reset back-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"

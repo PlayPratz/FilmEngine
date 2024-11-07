@@ -95,9 +95,9 @@ const ADVISORS: TeamMember[] = [
     <div v-for="person in ADVISORS" :key="person.name">
         <PersonBio :person="person" />
     </div>
-    <RouterLink to="/" class="text-decoration-none text-grey">
+    <!-- <RouterLink to="/" class="text-decoration-none text-grey">
         <div class="elevated-button my-5 px-5 fit-content">
             <h5 class="text-uppercase m-0">Home</h5>
         </div>
-    </RouterLink>
+    </RouterLink> -->
 </template>

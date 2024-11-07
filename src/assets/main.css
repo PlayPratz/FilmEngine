@@ -52,7 +52,7 @@
 
 .fe-logo {
   @media (prefers-color-scheme: light) {
-    filter: brightness(0);
+    filter: brightness(0.2);
   }
 }
 
@@ -89,15 +89,36 @@
   @media (min-width: 992px) {
     font-size: larger;
   }
+}
 
+.back-button {
+  background: var(--color-background);
+  border-radius: 100%;
+  border: var(--color-text) 1px solid;
+  padding: 4px;
+
+  @media (min-width: 768px) {
+    background: none;
+    border: none;
+  }
 }
 
 .elevated-button {
-  background: #caca94;
   color: black;
   border-radius: 12px;
   padding: 8px;
   text-align: center;
+}
+
+.elevated-button:hover {
+  color: white;
+}
+
+.bg-beige { 
+  background: #caca94;
+}
+.bg-beige:hover {
+  filter: brightness(0.9);
 }
 
 .text-grey {
