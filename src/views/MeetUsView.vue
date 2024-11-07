@@ -14,7 +14,11 @@ const FOUNDERS: TeamMember[] = [
         connections: [
             {
                 site: "Instagram",
-                link: "https://instagram.com/shree_warang"
+                link: "https://instagram.com/shree_warang",
+            },
+            {
+                site: "LinkedIn",
+                link: "https://www.linkedin.com/in/shree-warang-920483146",
             }
         ]
     },
@@ -47,13 +51,13 @@ const FOUNDERS: TeamMember[] = [
                 link: "https://instagram.com/PlayPratz",
             },
             {
+                site: "LinkedIn",
+                link: "https://www.linkedin.com/in/pratik-nerurkar/",
+            },
+            {
                 site: "Twitter",
                 link: "https://twitter.com/NotPlayPratz",
             },
-            {
-                site: "LinkedIn",
-                link: "https://www.linkedin.com/in/pratik-nerurkar/",
-            }
         ]
     }
 ];
@@ -82,7 +86,7 @@ const ADVISORS: TeamMember[] = [
 </script>
 
 <template>
-    <h4 class="team-member-name px-4 py-2 mb-4 rounded badge-founder">Founders</h4>
+    <h4 class="team-member-header px-4 py-2 mb-4 rounded badge-founder">Founders</h4>
     <div v-for="person in FOUNDERS" :key="person.name">
         <PersonBio :person="person" />
         <hr class="my-4"/>
