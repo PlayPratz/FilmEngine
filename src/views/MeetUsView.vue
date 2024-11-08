@@ -91,7 +91,7 @@ const ADVISORS: TeamMember[] = [
         <PersonBio :person="person" />
         <hr class="my-4"/>
     </div>
-    <h4 class="team-member-name px-4 py-2 mb-4 rounded badge-advisor">Advisors</h4>
+    <h4 class="team-member-header px-4 py-2 mb-4 rounded badge-advisor">Advisors</h4>
     <div v-for="person in ADVISORS" :key="person.name">
         <PersonBio :person="person" />
     </div>

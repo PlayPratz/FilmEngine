@@ -1,6 +1,5 @@
 @import './base.css';
 
-
 /*
 
 // X-Small devices (portrait phones, less than 576px)
@@ -26,6 +25,9 @@
 :root{
   --color-founder: #198754;
   --color-advisor: firebrick;
+  --color-beige: #caca94;
+  --color-beige-dark: #b4b484;
+  --color-cyan: #0dcaf0;
 }
 
 
@@ -93,7 +95,8 @@
 
 .back-button {
   background: var(--color-background);
-  border-radius: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
   border: var(--color-text) 1px solid;
   padding: 4px;
 
@@ -103,22 +106,24 @@
   }
 }
 
-.elevated-button {
-  color: black;
-  border-radius: 12px;
-  padding: 8px;
-  text-align: center;
+.btn-fe {
+  color: var(--color-background);
 }
 
-.elevated-button:hover {
-  color: white;
+.btn-beige { 
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-beige);
+  --bs-btn-hover-bg: var(--color-beige-dark);
+  --bs-btn-hover-color: #fff;
 }
 
-.bg-beige { 
-  background: #caca94;
-}
-.bg-beige:hover {
-  filter: brightness(0.9);
+.btn-outline-cyan {
+  --bs-btn-color: var(--color-cyan);
+  /* --bs-btn-bg: var(--color-cyan); */
+  --bs-btn-border-color: var(--color-cyan);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-cyan);
+  --bs-btn-hover-border-color: var(--color-cyan);
 }
 
 .text-grey {
@@ -159,6 +164,12 @@
 .fit-content {
   width: fit-content;
   margin: auto;
+}
+
+.fine-print {
+  text-transform: uppercase;
+  font-size: 12px;
+  /* opacity: 0.9; */
 }
 
 body {
