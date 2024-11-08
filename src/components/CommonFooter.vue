@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 const CONTACT_DETAILS = {
-    email: "thefilmengineco@gmail.com"
+    email: "hello@filmengine.in"
 }
 </script>
 <template>
