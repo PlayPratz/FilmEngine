@@ -21,7 +21,7 @@ const SOCIAL_MEDIA: SocialMediaConnection[] = [
 <template>
   <div class="fit-content">
     <!-- <img src="/logos/TFE-logo-only-transparent.png" class="img-fluid mx-auto d-block" style="height: 250px;" /> -->
-    <object data="/logos/logo-s1-max.svg" style="max-height: 350px" class="img-fluid fe-logo"/>
+    <object data="/logos/fe-text.svg" style="max-height: 350px" class="img-fluid fe-logo"/>
     <div class="fit-content">
       <!-- <h5 class="sec-title">We're here to produce entertainment.</h5> -->
       <SocialMedia class="my-3 mx-auto" :connections="SOCIAL_MEDIA" />
