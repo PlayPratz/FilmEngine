@@ -4,15 +4,19 @@ import SocialMedia, { type SocialMediaConnection } from '@/components/SocialMedi
 const SOCIAL_MEDIA: SocialMediaConnection[] = [
   {
     site: "Instagram",
-    link: "https://instagram.com/FilmEngine.in",
+    link: "https://instagram.com/filmengine.in",
   },
   {
     site: "YouTube",
-    link: "https://youtube.com/@FilmEngineIn",
+    link: "https://youtube.com/@filmenginein",
   },
   {
     site: "Twitter",
-    link: "https://twitter.com/TheFilmEngineCo",
+    link: "https://twitter.com/filmenginein",
+  },
+  {
+    site: "LinkedIn",
+    link: "https://linkedin.com/company/filmengine",
   },
 ]
 
