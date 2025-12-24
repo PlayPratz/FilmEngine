@@ -9,7 +9,7 @@ const CONTACT_DETAILS = {
         <hr class="mb-2" />
         <div class="d-flex justify-content-between align-items-center px-md-3">
             <div class="fine-print">
-                Copyright © 2024 ❚ FilmEngine Entertainment Private Limited
+                Copyright © 2025 ❚ FilmEngine Entertainment Private Limited
             </div>
             <a :href="'mailto:' + CONTACT_DETAILS.email" class="text-white">
                 <div class="p-2 btn btn-outline-cyan" style="min-width: 100px;">
